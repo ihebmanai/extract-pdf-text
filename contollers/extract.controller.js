@@ -12,11 +12,11 @@ const {
 const extractTextFromFile = async (req, res) => {
   let extractedText = "";
   const mimeType = req.file?.mimetype;
-  if (mimeType === "image/jpeg") {
-    extractedText = await extractTextFromImage(req.file?.buffer);
-  }
+
   if (mimeType === "application/pdf") {
     extractedText = (await extractTextFromPDF(req.file?.buffer)).text;
+  } else {
+    extractedText = await extractTextFromImage(req.file?.buffer);
   }
   return res.json(extractedText).status(200);
 };
