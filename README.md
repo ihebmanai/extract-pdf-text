@@ -1,6 +1,6 @@
 ## File Text Extractor React+NodeJS
 
-This application parse images and PDF file and extract the contained text using OCR technologie
+This application parse images and PDF file and extract the contained text using OCR.
 
 - **E**xpress : Back-end web application framework running on top of Node.js
 - **R**eact : Front-end web app framework; runs your JavaScript code in the user's browser, allowing your application UI to be dynamic
