@@ -14,9 +14,9 @@ const BootstrapButton = styled(Button)({
   borderColor: "#0063cc",
 });
 
-const ButtonExtract = ({ disabled, message, onClick }: any) => {
-  return (
-    <>
+const ButtonExtract = ({ disabled, message, onClick }: any) =>
+   (
+       <div>
       <Button
         disabled={disabled}
         onClick={() => onClick()}
@@ -25,9 +25,8 @@ const ButtonExtract = ({ disabled, message, onClick }: any) => {
       >
         {message}
       </Button>
-    </>
+    </div>
   );
-};
 ButtonExtract.propTypes = {
   onClick: PropTypes.func,
   disabled: PropTypes.bool,

@@ -7,7 +7,7 @@ import ContractHeroLogo from '../../../assets/logos/contract-hero-logo.svg';
 
 const Header = () => {
   return (
-    <AppBar position="static">
+    <AppBar style={{background : "#76b4f9"}} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
