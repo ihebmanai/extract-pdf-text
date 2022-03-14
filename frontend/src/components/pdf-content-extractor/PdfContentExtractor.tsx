@@ -37,10 +37,11 @@ const PdfContentExtractor = () => {
     setButtonMessage("No uploaded file");
     setIsPdfViewerDisplayed(false);
     setDisabled(true);
+    setIsFileReady(false);
   };
 
   const extractPdfToText = (fileToExtract: any) => {
-      setIsLoaderDisplayed(true)
+      setIsLoaderDisplayed(true);
     const fileFormData: FormData = new FormData();
     fileFormData.append("pdfFile", fileToExtract);
     extractTextFromFile(fileFormData)

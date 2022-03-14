@@ -37,7 +37,6 @@ const PdfViewerModal = ({ isOpen, fileName, content, onClose }: any) => {
           <JoditEditor
               value={content}
           />
-
         </DialogContentText>
       </DialogContent>
       <DialogActions>
