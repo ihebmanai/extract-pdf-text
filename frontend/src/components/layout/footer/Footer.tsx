@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div>
-        <h2>Extract PDF File</h2>
+        <h2>Extract File Text</h2>
       </div>
     </div>
   );
