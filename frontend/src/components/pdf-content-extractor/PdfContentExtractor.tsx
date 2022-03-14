@@ -48,7 +48,6 @@ const PdfContentExtractor = () => {
         setIsFileReady(true);
         setText(extractedFile.data);
         setIsLoaderDisplayed(false);
-        setIsFileReady(false)
       })
       .catch((e) => {
         console.error(e);

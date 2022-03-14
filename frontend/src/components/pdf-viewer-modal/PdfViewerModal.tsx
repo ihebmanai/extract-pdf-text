@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import {
   Button,
   Dialog,
@@ -7,20 +7,20 @@ import {
   DialogContentText,
   DialogTitle,
 } from "@mui/material";
-import ReactQuill from "react-quill";
 
 import PropTypes from "prop-types";
+import JoditEditor from "jodit-react";
 
 const PdfViewerModal = ({ isOpen, fileName, content, onClose }: any) => {
   const [open, setOpen] = React.useState(false);
+    useEffect(()=> {
+      setOpen(isOpen)
+    },  [isOpen])
+  const closeHandler = () => {
+    setOpen(false);
+    onClose();
+  };
 
-  const closeHandler = () => {};
-  setOpen(false);
-  onClose();
-
-  useEffect(() => {
-    setOpen(isOpen);
-  }, [isOpen]);
 
   return (
     <Dialog
@@ -34,7 +34,10 @@ const PdfViewerModal = ({ isOpen, fileName, content, onClose }: any) => {
       </DialogTitle>
       <DialogContent>
         <DialogContentText id="alert-dialog-description">
-          <ReactQuill value={content} />
+          <JoditEditor
+              value={content}
+          />
+
         </DialogContentText>
       </DialogContent>
       <DialogActions>
