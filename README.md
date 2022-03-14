@@ -15,7 +15,7 @@ This application parse images and PDF file and extract the contained text using 
 ### Installation
 ## Run Backend
 ```
-
+npm backend
 npm install
 npm run start-backend
 ```
