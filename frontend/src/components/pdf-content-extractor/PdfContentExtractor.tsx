@@ -40,6 +40,7 @@ const PdfContentExtractor = () => {
   };
 
   const extractPdfToText = (fileToExtract: any) => {
+      setIsLoaderDisplayed(true)
     const fileFormData: FormData = new FormData();
     fileFormData.append("pdfFile", fileToExtract);
     extractTextFromFile(fileFormData)

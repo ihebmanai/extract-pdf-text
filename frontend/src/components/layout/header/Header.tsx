@@ -14,7 +14,7 @@ const Header = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}>
+            sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}>
             <img src={ContractHeroLogo} alt="contractHero logo" width={200} />
           </Typography>
         </Toolbar>
